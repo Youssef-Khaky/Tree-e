@@ -4,7 +4,7 @@
 linearActuatorLibrary::linearActuatorLibrary(int directionPin1_DIGITAL, int directionPin2_DIGITAL, int speedPin_PWM)
 {
     this->directionPin1_DIGITAL = directionPin1_DIGITAL;
-    this->directionPin2_DIGITAL = directionPin1_DIGITAL;
+    this->directionPin2_DIGITAL = directionPin2_DIGITAL;
     this->speedPin_PWM = speedPin_PWM;
     pinMode(speedPin_PWM, OUTPUT);
     pinMode(directionPin1_DIGITAL, OUTPUT);
