@@ -34,3 +34,24 @@ void MotorController::stopMotorRotation(void)
     digitalWrite(this->motorPinA, LOW);
     digitalWrite(this->motorPinB, LOW);
 }
+
+void MotorController::wheelSpeed()
+{
+ int RFstate = digitalRead(encoderRFpinA);
+ if((encoderRFPinALast == LOW) && RFstate==HIGH)
+ {
+   int val = digitalRead(encoderRFpinB);
+   if(val == LOW && Direction)
+  {
+     Direction = false; //Reverse
+   }
+   else if(val == HIGH && !Direction)
+   {
+     Direction = true;  //Forward
+   }
+ }
+ encoderRFPinALast = RFstate;
+
+ if(!Direction)  duration  ;
+ else  duration--;
+}

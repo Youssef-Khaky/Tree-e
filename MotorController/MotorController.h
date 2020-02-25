@@ -7,7 +7,8 @@ class MotorController
     int motorPinB; 
     int encoderPinA;
     int encoderPinB;
-
+    int encoderLBPinALast;
+    
 public:
     MotorController(int motorPinA, int motorPinB, int encoderPinA, int encoderPinB);
     void rotateMotorForward(void);

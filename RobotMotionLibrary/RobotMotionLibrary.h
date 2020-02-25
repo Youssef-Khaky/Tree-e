@@ -22,11 +22,17 @@ public:
         int RBMotorPinA,
         int RBMotorPinB,
         int RFMotorPinA,
-        int RFMotorPinB)
+        int RFMotorPinB);
 
+    MotorController RFMotor;
+    MotorController LFMotor;
+    MotorController RBMotor;
+    MotorController LBMotor;
 
-    private: MotorController RFMotor;
-    private: MotorController LFMotor;
-    private: MotorController RBMotor;
-    private: MotorController LBMotor;
-}
+    void MoveForward(void);
+    void reverse(void);
+    void Stop(void);
+    void Left(void);
+    void Right(void);
+};
+#endif

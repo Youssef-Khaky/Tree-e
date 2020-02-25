@@ -17,8 +17,7 @@ RobotMotionLibrary::RobotMotionLibrary(
     int LBMotorPinA,
     int LBMotorPinB,
     int encoderLBMotorPinA,
-    int encoderLBMotorPinB
-    )
+    int encoderLBMotorPinB)
 {
     this->RFMotor = MotorController(RFMotorPinA, RFMotorPinB, encoderRFMotorPinA, encoderRFMotorPinB);
     this->LFMotor = MotorController(LFMotorPinA, LFMotorPinB, encoderLFMotorPinA, encoderLFMotorPinB);
