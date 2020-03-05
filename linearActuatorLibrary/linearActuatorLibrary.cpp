@@ -12,6 +12,10 @@ linearActuatorLibrary::linearActuatorLibrary(int directionPin1_DIGITAL, int dire
 }
 
 void linearActuatorLibrary::dig(void){
+    extend();
+    delay(4800);
+    retract();
+    delay(5200);
 }
 
 void linearActuatorLibrary::stopMotor(void)
