@@ -10,18 +10,18 @@ Sol::Sol(int pin)
 {
   pinMode(pin, OUTPUT);
   this->_pin = pin;
-  
 }
 
-void Sol::gateo()
+void Sol::openFor(float timeOpen)
 {
   digitalWrite(_pin, HIGH);
-  delay(1000);
-}
-
-
-void Sol::gatec()
-{
+  delay(timeOpen);
   digitalWrite(_pin, LOW);
-  delay(1000);
 }
+
+
+// void Sol::gatec()
+// {
+//   digitalWrite(_pin, LOW);
+//   delay(1000);
+// }

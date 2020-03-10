@@ -15,8 +15,8 @@ class Sol
 { 
   public:
      Sol(int pin);
-     void gateo();
-     void gatec();
+     void openFor();
+   //   void gatec();
   private:
       int _pin;
   
